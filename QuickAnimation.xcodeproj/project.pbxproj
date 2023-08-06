@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0D9E822A755F89005BCB62 /* MagnifyGlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0D9E812A755F89005BCB62 /* MagnifyGlassView.swift */; };
+		5C2170472A7D36920031B5EC /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 5C2170462A7D36920031B5EC /* SwiftUIX */; };
+		5C9EE7E62A7A8AF200634728 /* ThreadsInvite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9EE7E52A7A8AF200634728 /* ThreadsInvite.swift */; };
+		5C9EE7E82A7AA02D00634728 /* RotateText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9EE7E72A7AA02D00634728 /* RotateText.swift */; };
+		5CC424022A77E89400F9B1CC /* TorchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC424012A77E89400F9B1CC /* TorchView.swift */; };
 		5CF994082A2255BA00C04D44 /* QuickAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF994072A2255BA00C04D44 /* QuickAnimationApp.swift */; };
 		5CF9940A2A2255BA00C04D44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF994092A2255BA00C04D44 /* ContentView.swift */; };
 		5CF9940C2A2255BC00C04D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF9940B2A2255BC00C04D44 /* Assets.xcassets */; };
@@ -14,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C0D9E812A755F89005BCB62 /* MagnifyGlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyGlassView.swift; sourceTree = "<group>"; };
+		5C9EE7E52A7A8AF200634728 /* ThreadsInvite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsInvite.swift; sourceTree = "<group>"; };
+		5C9EE7E72A7AA02D00634728 /* RotateText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateText.swift; sourceTree = "<group>"; };
+		5CC424012A77E89400F9B1CC /* TorchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchView.swift; sourceTree = "<group>"; };
 		5CF994042A2255BA00C04D44 /* QuickAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF994072A2255BA00C04D44 /* QuickAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAnimationApp.swift; sourceTree = "<group>"; };
 		5CF994092A2255BA00C04D44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +35,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C2170472A7D36920031B5EC /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C0D9E7E2A755EE3005BCB62 /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				5C0D9E812A755F89005BCB62 /* MagnifyGlassView.swift */,
+				5CC424012A77E89400F9B1CC /* TorchView.swift */,
+				5C9EE7E52A7A8AF200634728 /* ThreadsInvite.swift */,
+				5C9EE7E72A7AA02D00634728 /* RotateText.swift */,
+			);
+			path = collection;
+			sourceTree = "<group>";
+		};
 		5CF993FB2A2255B900C04D44 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +72,7 @@
 		5CF994062A2255BA00C04D44 /* QuickAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				5C0D9E7E2A755EE3005BCB62 /* collection */,
 				5CF994072A2255BA00C04D44 /* QuickAnimationApp.swift */,
 				5CF994092A2255BA00C04D44 /* ContentView.swift */,
 				5CF9940B2A2255BC00C04D44 /* Assets.xcassets */,
@@ -83,6 +105,9 @@
 			dependencies = (
 			);
 			name = QuickAnimation;
+			packageProductDependencies = (
+				5C2170462A7D36920031B5EC /* SwiftUIX */,
+			);
 			productName = QuickAnimation;
 			productReference = 5CF994042A2255BA00C04D44 /* QuickAnimation.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 5CF993FB2A2255B900C04D44;
+			packageReferences = (
+				5C2170452A7D36920031B5EC /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = 5CF994052A2255BA00C04D44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CF9940A2A2255BA00C04D44 /* ContentView.swift in Sources */,
+				5CC424022A77E89400F9B1CC /* TorchView.swift in Sources */,
 				5CF994082A2255BA00C04D44 /* QuickAnimationApp.swift in Sources */,
+				5C0D9E822A755F89005BCB62 /* MagnifyGlassView.swift in Sources */,
+				5C9EE7E62A7A8AF200634728 /* ThreadsInvite.swift in Sources */,
+				5C9EE7E82A7AA02D00634728 /* RotateText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C2170452A7D36920031B5EC /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C2170462A7D36920031B5EC /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C2170452A7D36920031B5EC /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5CF993FC2A2255B900C04D44 /* Project object */;
 }
